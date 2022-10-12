@@ -84,4 +84,5 @@ a:visited{
 }
 a:hover{
   color: black;
+  font-weight: 400;
 }
