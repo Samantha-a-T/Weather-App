@@ -66,3 +66,19 @@ a:hover {
 #city-name::first-letter {
   text-transform: capitalize;
 }
+
+.repositoryLink {
+  text-align: center;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: lighter;
+  color: grey;
+ 
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: grey;
+  text-decoration: none;
+}
