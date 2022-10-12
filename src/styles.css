@@ -82,3 +82,6 @@ a:visited{
   color: grey;
   text-decoration: none;
 }
+a:hover{
+  color: black;
+}
