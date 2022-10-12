@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+}
+h1 {
+  display: block;
+  margin-top: -150px;
+  font-size: 75px;
+}
+h2 {
+  font-weight: 300;
+}
+
+.degree {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+.upcomingWeather {
+  font-size: 15px;
+}
+
+.weatherIcon {
+  font-size: 250px;
+  color: rgb(247, 209, 20, 0.5);
+  display: block;
+  margin-right: 300px;
+}
+.weekDay {
+  font-size: 20px;
+}
+.weatherIcons {
+  font-size: 50px;
+  margin-top: -20px;
+}
+.highTemp {
+  display: block;
+  margin-left: 150px;
+}
+.lowTemp {
+  display: block;
+  margin-right: 150px;
+}
+.changeCity {
+  display: block;
+  margin-left: 370px;
+  margin-top: 5px;
+  text-align: center;
+}
+.submitButton {
+  display: block;
+  margin-left: 565px;
+  margin-top: -30px;
+}
+.currentButton {
+  display: block;
+  margin-top: -30px;
+  margin-left: 223px;
+}
+#city-name::first-letter {
+  text-transform: capitalize;
+}
