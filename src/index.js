@@ -46,6 +46,15 @@ function currentWeather(response) {
   let h1 = document.querySelector("#city-name");
   h1.innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
+  let description = document.querySelector("#weather-description");
+  let wind = document.querySelector("#wind-speed");
+  description.innerHTML= response.data.weather[0].description
+  wind.innerHTML = `${Math.round(response.data.wind.speed)} km/h winds` ;
+  let icon = document.querySelector("#weather-icon");
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function getLocation(position) {
