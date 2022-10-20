@@ -13,15 +13,7 @@ h2 {
 .degree {
   text-decoration: none;
 }
-a:link {
-  color: black;
-}
-a:visited {
-  color: black;
-}
-a:hover {
-  color: blue;
-}
+
 .upcomingWeather {
   font-size: 15px;
 }
@@ -73,16 +65,15 @@ a:hover {
   font-size: 12px;
   font-weight: lighter;
   color: grey;
- 
 }
-a:link{
+
+a:link {
   text-decoration: none;
-}
-a:visited{
-  color: grey;
-  text-decoration: none;
+  font-weight: 400;
 }
 a:hover{
   color: black;
-  font-weight: 400;
+}
+.active {
+  color: black;
 }
