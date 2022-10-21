@@ -29,6 +29,7 @@
             placeholder="change city"
             class="changeCity"
             id="search-city"
+            autocomplete="off"
           />
           <input
             type="submit"
@@ -52,55 +53,15 @@
           </h2>
 
           <div class="row current-weather">
-            <div class="col-6" id="weather-description"></div>
-            <div class="col-6" id="wind-speed"></div>
+            <div id="weather-description"></div>
+            <div id="wind-speed"></div>
           </div>
         </header>
         <br />
         <br />
 
-        <section>
-          <h4>
-            <div class="row weekDay">
-              <div class="col">Tues</div>
-              <div class="col">Wed</div>
-              <div class="col">Thu</div>
-              <div class="col">Fri</div>
-              <div class="col">Sat</div>
-              <div class="col">Sun</div>
-              <div class="col">Mon</div>
-            </div>
-          </h4>
-
-          <div class="row weatherIcons">
-            <div class="col">🌧</div>
-            <div class="col">🌤</div>
-            <div class="col">🌤</div>
-            <div class="col">☁️</div>
-            <div class="col">☀️</div>
-            <div class="col">🌨</div>
-            <div class="col">☀️</div>
-          </div>
-
-          <div class="row upcomingWeather">
-            <div class="col">15°C</div>
-            <div class="col">17°C</div>
-            <div class="col">17°C</div>
-            <div class="col">14°C</div>
-            <div class="col">23°C</div>
-            <div class="col">-2°C</div>
-            <div class="col">17°C</div>
-          </div>
-
-          <div class="row upcomingWeather">
-            <div class="col">4°C</div>
-            <div class="col">8°C</div>
-            <div class="col">7°C</div>
-            <div class="col">6°C</div>
-            <div class="col">11°C</div>
-            <div class="col">-6°C</div>
-            <div class="col">5°C</div>
-          </div>
+        <section id="forecast">
+                
         </section>
         <br />
         <p class="repositoryLink">
