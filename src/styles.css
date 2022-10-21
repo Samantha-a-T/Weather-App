@@ -3,16 +3,11 @@ body {
 }
 h1 {
   display: block;
-  margin-top:-70px;
+  margin-top: -70px;
   font-size: 75px;
-  
 }
 h2 {
   font-weight: 300;
-}
-
-.degree { 
-  text-decoration: none;
 }
 
 .upcomingWeather {
@@ -32,47 +27,80 @@ h2 {
   margin-left: 370px;
   margin-top: 5px;
   text-align: center;
+    border: 1px solid grey;
+  border-radius: 10px;
 }
 .submitButton {
   display: block;
   margin-left: 565px;
   margin-top: -30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+    background-color: rgba(195, 228, 249, 0.522);
+   box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
 }
 .currentButton {
   display: block;
-  margin-top: -30px;
+  margin-top: -28px;
   margin-left: 223px;
+   border: 1px solid grey;
+   border-radius: 10px;
+   background-color: rgba(195, 228, 249, 0.522);
+   box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
 }
 #city-name::first-letter {
   text-transform: capitalize;
 }
 
 .repositoryLink {
-  text-align: center;
   font-family: monospace;
   font-size: 12px;
   font-weight: lighter;
   color: grey;
+  text-align: center;
 }
 
 a:link {
   text-decoration: none;
   font-weight: 400;
 }
-a:hover{
+a:hover {
   color: black;
 }
 .active {
   color: black;
   cursor: default;
 }
-#weather-description::first-letter{
+#weather-description::first-letter {
   text-transform: uppercase;
 }
 
-.weatherIcon{
+.weatherIcon {
   height: 100px;
   width: 100px;
   padding: 0;
   margin-left: 0 auto;
+}
+.weatherApp {
+background-color: rgba(195, 228, 249, 0.188);
+  border-radius: 20px;
+  box-shadow: 10px 5px 10px rgb(128, 128, 128, 0.2);
+}
+.weekDayWrapper {
+  background-color: rgba(195, 228, 249, 0.8);
+  border-radius: 20px;
+box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
+padding-left: 0px;
+}
+
+.currentWeatherWrapper{
+  background-color: rgba(195, 228, 249, 0.8);
+  border-radius: 20px;
+box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
+margin: 0 auto;
+
+}
+.forecastColumn{
+margin-left: 10px;
+margin-right: 12px;
 }
