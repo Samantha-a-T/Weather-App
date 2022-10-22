@@ -15,10 +15,10 @@ h2 {
 }
 
 .weekDay {
-  font-size: 20px;
+  font-size: 17px;
 }
 .weatherIcons {
-  font-size: 50px;
+  font-size: 40px;
   margin-top: -20px;
 }
 
@@ -29,6 +29,9 @@ h2 {
   text-align: center;
     border: 1px solid grey;
   border-radius: 10px;
+}
+.changeCity:focus{
+  outline: none;
 }
 .submitButton {
   display: block;
@@ -78,8 +81,6 @@ a:hover {
 .weatherIcon {
   height: 100px;
   width: 100px;
-  padding: 0;
-  margin-left: 0 auto;
 }
 .weatherApp {
 background-color: rgba(195, 228, 249, 0.188);
@@ -89,18 +90,11 @@ background-color: rgba(195, 228, 249, 0.188);
 .weekDayWrapper {
   background-color: rgba(195, 228, 249, 0.8);
   border-radius: 20px;
-box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
+box-shadow: 1px 1px 6px   rgb(128, 128, 128, 0.2);
 padding-left: 0px;
 }
 
-.currentWeatherWrapper{
-  background-color: rgba(195, 228, 249, 0.8);
-  border-radius: 20px;
-box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
-margin: 0 auto;
-
-}
 .forecastColumn{
 margin-left: 10px;
-margin-right: 12px;
+margin-right: 14px;
 }
