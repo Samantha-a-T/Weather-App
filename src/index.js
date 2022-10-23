@@ -9,11 +9,11 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
-let h2 = document.querySelector(".currentDate");
+let h2 = document.querySelector("#last-updated");
 if (now.getMinutes() < 10) {
-  h2.innerHTML = `${day} ${now.getHours()}:0${now.getMinutes()}`;
+  h2.innerHTML = `Last updated: Today at ${now.getHours()}:0${now.getMinutes()}`;
 } else {
-  h2.innerHTML = `${day} ${now.getHours()}:${now.getMinutes()}`;
+  h2.innerHTML = `Last updated: Today at ${now.getHours()}:${now.getMinutes()}`;
 }
 
 function formatDay(timestamp) {
@@ -109,9 +109,9 @@ function displayForecast(response) {
         <img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }@2x.png" width="60" /> 
-            <div class="max-temperature">${Math.round(
+            <div class="max-temperature"> <strong>${Math.round(
               forecastDay.temp.max
-            )}</div>
+            )}</strong> </div>
             <div class="min-temperature">${Math.round(
               forecastDay.temp.min
             )}</div> </div></div>`;
