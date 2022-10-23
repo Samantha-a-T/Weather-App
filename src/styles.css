@@ -23,9 +23,8 @@ h2 {
 }
 
 .changeCity {
-  display: block;
-  margin-left: 370px;
-  margin-top: 5px;
+
+  margin: 0 auto;
   text-align: center;
     border: 1px solid grey;
   border-radius: 10px;
@@ -34,18 +33,14 @@ h2 {
   outline: none;
 }
 .submitButton {
-  display: block;
-  margin-left: 565px;
-  margin-top: -30px;
+
   border: 1px solid grey;
   border-radius: 10px;
     background-color: rgba(195, 228, 249, 0.522);
    box-shadow: 1px 1px 1px 1px  rgb(128, 128, 128, 0.2);
 }
 .currentButton {
-  display: block;
-  margin-top: -28px;
-  margin-left: 223px;
+
    border: 1px solid grey;
    border-radius: 10px;
    background-color: rgba(195, 228, 249, 0.522);
