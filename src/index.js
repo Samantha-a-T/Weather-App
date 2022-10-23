@@ -11,9 +11,9 @@ let days = [
 let day = days[now.getDay()];
 let h2 = document.querySelector("#last-updated");
 if (now.getMinutes() < 10) {
-  h2.innerHTML = `Last updated: Today at ${now.getHours()}:0${now.getMinutes()}`;
+  h2.innerHTML = `Last updated today at ${now.getHours()}:0${now.getMinutes()}`;
 } else {
-  h2.innerHTML = `Last updated: Today at ${now.getHours()}:${now.getMinutes()}`;
+  h2.innerHTML = `Last updated today at ${now.getHours()}:${now.getMinutes()}`;
 }
 
 function formatDay(timestamp) {
@@ -73,26 +73,7 @@ function getLocation(position) {
   axios.get(weatherUrl).then(currentWeather);
 }
 
-function changeCelsius(event) {
-  event.preventDefault();
-  document.querySelector("#change-to-celsius").classList.add("active");
-  document.querySelector("#change-to-fahrenheit").classList.remove("active");
-  document.querySelector("#current-temp").innerHTML =
-    Math.round(celsiusTemperature);
-}
 
-document
-  .querySelector("#change-to-celsius")
-  .addEventListener("click", changeCelsius);
-
-function changeFahrenheit(event) {
-  event.preventDefault();
-  document.querySelector("#change-to-celsius").classList.remove("active");
-  document.querySelector("#change-to-fahrenheit").classList.add("active");
-  document.querySelector("#current-temp").innerHTML = Math.round(
-    (celsiusTemperature * 9) / 5 + 32
-  );
-}
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -126,11 +107,5 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
-
-document
-  .querySelector("#change-to-fahrenheit")
-  .addEventListener("click", changeFahrenheit);
-
-let celsiusTemperature = null;
 
 search("Calgary");
